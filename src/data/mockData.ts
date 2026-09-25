@@ -1,6 +1,7 @@
 import {
   FounderMember,
   NewsArticle,
+  MemberArticle,
   ChatChannel,
   ChatMessage,
   MarketTickerItem,
@@ -736,7 +737,10 @@ export const INITIAL_INQUIRIES: VisitorInquiry[] = [
   }
 ];
 
+export const INITIAL_ARTICLE_REVIEWS: MemberArticle[] = INITIAL_MEMBERS.flatMap((m) => m.articles || []);
+
 export const INITIAL_EMAIL_NOTIFICATIONS: AutomatedEmailNotification[] = [
+
   {
     id: 'email-notif-1',
     recipientEmail: 'sarah@apexscale.ai',
