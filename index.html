@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Ensure window.fetch has both getter & setter to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          var nativeFetch = typeof window !== 'undefined' && window.fetch ? window.fetch.bind(window) : null;
+          var _currentFetch = nativeFetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(fn) {
+              _currentFetch = fn;
+            }
+          });
+        } catch (e) {
+          // Ignore if already configured
+        }
+      })();
+    </script>
+    <title>The Founder Grid | Where Business Meets Opportunity</title>
+    <meta name="description" content="The Founder Grid: Where Business Meets Opportunity. Business & finance intelligence, exclusive founder community, custom publication subdomains, and syndication network." />
+    <meta property="og:title" content="The Founder Grid | Where Business Meets Opportunity" />
+    <meta property="og:description" content="The Founder Grid: Where Business Meets Opportunity. Business & finance intelligence, exclusive founder community, custom publication subdomains, and syndication network." />
+    <meta property="og:image" content="/logo.svg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="theme-light bg-[#FAF8F5] text-[#121316] selection:bg-[#9C7240] selection:text-white antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

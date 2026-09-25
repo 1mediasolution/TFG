@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGradientIcon" x1="10%" y1="100%" x2="95%" y2="5%">
+      <stop offset="0%" stop-color="#8C5F1A" />
+      <stop offset="30%" stop-color="#BF8E32" />
+      <stop offset="65%" stop-color="#F2D183" />
+      <stop offset="85%" stop-color="#FBE6B4" />
+      <stop offset="100%" stop-color="#DFB356" />
+    </linearGradient>
+    <filter id="softElevation" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.12" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Square App Tile -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#FFFFFF" filter="url(#softElevation)" />
+  
+  <!-- 4-Quadrant Grid Mark -->
+  <g id="emblem" transform="translate(64, 64) scale(1.92)">
+    <!-- Top-Left Arched Tile -->
+    <path d="M 20,94 L 20,72 C 20,32 38,18 94,18 L 94,94 Z" fill="#151515" />
+    
+    <!-- Top-Right Golden Leaf -->
+    <path d="M 108,94 C 108,48 138,20 182,18 C 182,64 154,94 108,94 Z" fill="url(#goldGradientIcon)" />
+    
+    <!-- Bottom-Left Tile -->
+    <rect x="20" y="108" width="74" height="74" rx="14" fill="#151515" />
+    
+    <!-- Bottom-Right Arched Tile -->
+    <path d="M 108,108 L 182,108 C 182,152 150,182 108,182 Z" fill="#151515" />
+  </g>
+</svg>

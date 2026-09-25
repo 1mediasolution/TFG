@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .title-the-w {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 42px;
+        font-weight: 700;
+        fill: #FFFFFF;
+      }
+      .title-main-w {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 88px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        fill: #FFFFFF;
+      }
+      .tagline-w {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.28em;
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+
+  <!-- Left Monochrome White Emblem -->
+  <g transform="translate(30, 26) scale(0.95)">
+    <!-- Top-Left Arched Tile -->
+    <path d="M 20,95 L 20,72 C 20,32 38,18 95,18 L 95,95 Z" fill="#FFFFFF" />
+    <!-- Top-Right Leaf -->
+    <path d="M 105,95 C 105,48 138,20 180,18 C 180,64 152,95 105,95 Z" fill="#FFFFFF" />
+    <!-- Bottom-Left Tile -->
+    <rect x="20" y="105" width="75" height="75" rx="14" fill="#FFFFFF" />
+    <!-- Bottom-Right Arched Tile -->
+    <path d="M 105,105 L 180,105 C 180,152 148,180 105,180 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Wordmark in Crisp White -->
+  <g transform="translate(240, 20)">
+    <text x="0" y="48" class="title-the-w">The</text>
+    <text x="0" y="132" class="title-main-w">Founder Grid</text>
+    <text x="4" y="184" class="tagline-w">WHERE BUSINESS MEETS OPPORTUNITY</text>
+  </g>
+</svg>

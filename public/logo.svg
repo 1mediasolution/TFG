@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+  <defs>
+    <linearGradient id="bronzeLeafGrad" x1="15%" y1="100%" x2="85%" y2="0%">
+      <stop offset="0%" stop-color="#805728" />
+      <stop offset="45%" stop-color="#986D3B" />
+      <stop offset="80%" stop-color="#AA7E48" />
+      <stop offset="100%" stop-color="#9C703D" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap');
+      .title-the {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 42px;
+        font-weight: 700;
+        fill: #0B0B0B;
+      }
+      .title-main {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 88px;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        fill: #0B0B0B;
+      }
+      .tagline {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.28em;
+        fill: #0B0B0B;
+      }
+    </style>
+  </defs>
+
+  <!-- Left Emblem Mark -->
+  <g transform="translate(30, 26) scale(0.95)">
+    <!-- Top-Left Arched Tile (Black) -->
+    <path d="M 20,95 L 20,72 C 20,32 38,18 95,18 L 95,95 Z" fill="#0B0B0B" />
+    <!-- Top-Right Cognac Bronze Leaf -->
+    <path d="M 105,95 C 105,48 138,20 180,18 C 180,64 152,95 105,95 Z" fill="url(#bronzeLeafGrad)" />
+    <!-- Bottom-Left Tile (Black) -->
+    <rect x="20" y="105" width="75" height="75" rx="14" fill="#0B0B0B" />
+    <!-- Bottom-Right Arched Tile (Graphite) -->
+    <path d="M 105,105 L 180,105 C 180,152 148,180 105,180 Z" fill="#222222" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(240, 20)">
+    <text x="0" y="48" class="title-the">The</text>
+    <text x="0" y="132" class="title-main">Founder Grid</text>
+    <text x="4" y="184" class="tagline">WHERE BUSINESS MEETS OPPORTUNITY</text>
+  </g>
+</svg>

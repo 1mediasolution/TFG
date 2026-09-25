@@ -1,0 +1,6 @@
+{
+  "name": "The Founders Grid",
+  "description": "Business & finance news portal with an exclusive founder community, custom subdomains for article publishing, private discussion & referral chat, and custom member portfolios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="cognacBronzeGradient" x1="15%" y1="100%" x2="85%" y2="0%">
+      <stop offset="0%" stop-color="#805728" />
+      <stop offset="45%" stop-color="#986D3B" />
+      <stop offset="80%" stop-color="#AA7E48" />
+      <stop offset="100%" stop-color="#9C703D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Off-White Rounded App Icon Background -->
+  <rect width="256" height="256" rx="56" fill="#FFFFFF" />
+
+  <!-- The 4-Quadrant Emblem Mark matching THE FOUNDER GRID LOGO FAVICON.png -->
+  <g transform="translate(32, 32) scale(0.96)">
+    <!-- Top-Left Arched Tile (Solid Black) -->
+    <path d="M 20,95 L 20,72 C 20,32 38,18 95,18 L 95,95 Z" fill="#0B0B0B" />
+
+    <!-- Top-Right Golden Leaf (Signature Cognac Bronze) -->
+    <path d="M 105,95 C 105,48 138,20 180,18 C 180,64 152,95 105,95 Z" fill="url(#cognacBronzeGradient)" />
+
+    <!-- Bottom-Left Tile (Solid Black) -->
+    <rect x="20" y="105" width="75" height="75" rx="14" fill="#0B0B0B" />
+
+    <!-- Bottom-Right Arched Tile (Subtle Graphite Depth) -->
+    <path d="M 105,105 L 180,105 C 180,152 148,180 105,180 Z" fill="#222222" />
+  </g>
+</svg>
